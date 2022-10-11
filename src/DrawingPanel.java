@@ -28,19 +28,19 @@ class DrawingPanel extends JFrame implements ActionListener {
         Duck duck = new Duck();
 /////////////////////////// Начало координат (8, 31)
 
-        while (ticksFromStart % 4 == 1) {
+        if (ticksFromStart % 4 == 1) {
             duck.draw1stFrame(g2d,498,480);
         }
 
-        while (ticksFromStart % 4 == 2) {
+        if (ticksFromStart % 4 == 2) {
             duck.draw2dFrame(g2d,498,480);
         }
 
-        while (ticksFromStart % 4 == 3) {
+        if (ticksFromStart % 4 == 3) {
             duck.draw3dFrame(g2d,498,480);
         }
 
-        while (ticksFromStart % 4 == 0) {
+        if (ticksFromStart % 4 == 0) {
             duck.draw4thFrame(g2d,498,480);
         }
 
